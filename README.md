@@ -1,3 +1,10 @@
+[![GitHub](https://img.shields.io/badge/GitHub-noahp/dirdesc-8da0cb?style=for-the-badge&logo=github)](https://github.com/noahp/dirdesc)
+[![PyPI
+version](https://img.shields.io/pypi/v/dirdesc.svg?style=for-the-badge&logo=PyPi&logoColor=white)](https://pypi.org/project/dirdesc/)
+[![PyPI
+pyversions](https://img.shields.io/pypi/pyversions/dirdesc.svg?style=for-the-badge&logo=python&logoColor=white&color=ff69b4)](https://pypi.python.org/pypi/dirdesc/)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/noahp/dirdesc/main-ci/main?logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/noahp/dirdesc/actions)
+
 # dirdesc
 
 Generate an annotated directory tree description.
