@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dirdesc"
-version = "0.1.0"
+version = "0.0.0"
 description = "Generate an annotated directory tree description"
 authors = ["Noah Pendleton"]
 license = "MIT"
