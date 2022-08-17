@@ -3,7 +3,7 @@
 version](https://img.shields.io/pypi/v/dirdesc.svg?style=for-the-badge&logo=PyPi&logoColor=white)](https://pypi.org/project/dirdesc/)
 [![PyPI
 pyversions](https://img.shields.io/pypi/pyversions/dirdesc.svg?style=for-the-badge&logo=python&logoColor=white&color=ff69b4)](https://pypi.python.org/pypi/dirdesc/)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/noahp/dirdesc/main-ci/main?logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/noahp/dirdesc/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/noahp/dirdesc/CI/main?logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/noahp/dirdesc/actions)
 
 # dirdesc
 
