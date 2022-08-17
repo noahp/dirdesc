@@ -7,11 +7,12 @@ writing).
 """
 
 try:
-    from importlib.metadata import PackageNotFoundError
+    from importlib.metadata import PackageNotFoundError  # type: ignore[import]
     from importlib.metadata import version as get_version
 except ImportError:
     # fallback for python <3.8
     from importlib_metadata import PackageNotFoundError  # type: ignore[import,no-redef]
+    from importlib_metadata import version as get_version  # type: ignore[no-redef]
 
 # when running tests on the repo, provide a fallback value, since the
 # memfault-cli package is not installed at that time

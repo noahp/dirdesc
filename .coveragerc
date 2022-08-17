@@ -1,0 +1,2 @@
+[run]
+omit = dirdesc/__version__.py
