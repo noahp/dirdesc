@@ -92,8 +92,14 @@ The version is not set in `pyproject.toml`, instead it's updated when git
 tagging:
 
 ```bash
-# git tag, poetry version bump, build, publish
-❯ git tag -a 0.1.0 -m 0.1.0 && poetry version $(git describe) && poetry build && poetry publish
+# git tag, poetry version bump, build
+❯ git tag -a 0.1.0 -m 0.1.0 && poetry version $(git describe) && poetry build
+# if it looks good, publish
+❯ poetry publish
 # push the fresh tag
 ❯ git push --tags
+# create a github release
+❯ gh release create $(git describe) --generate-notes
+# revert the temporary version stamp
+❯ git checkout -- pyproject.toml
 ```
