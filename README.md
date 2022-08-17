@@ -26,6 +26,7 @@ there are changes to the directory tree.
 
 - [dirdesc](#dirdesc)
   - [Usage](#usage)
+  - [Publishing](#publishing)
 
 <!-- markdown-toc-cli-end -->
 
@@ -84,3 +85,15 @@ the directory entries in that directory. The possible options are:
    somefile: description of somefile
    some-other-file: description of some-other-file
    ```
+
+## Publishing
+
+The version is not set in `pyproject.toml`, instead it's updated when git
+tagging:
+
+```bash
+# git tag, poetry version bump, build, publish
+❯ git tag -a 0.1.0 -m 0.1.0 && poetry version $(git describe) && poetry build && poetry publish
+# push the fresh tag
+❯ git push --tags
+```
