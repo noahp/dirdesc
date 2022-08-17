@@ -14,7 +14,7 @@ import yaml
 from rich import print  # pylint: disable=redefined-builtin
 from rich.tree import Tree
 
-from ._version import VERSION
+from .__version__ import VERSION
 
 DIRDESC_FILE_NAME = ".dirdesc.yaml"
 
@@ -162,8 +162,7 @@ def walk(
     children = []
     if maxdepth > 1:
         children = [
-            walk(path, maxdepth - 1, dirsfirst, filesfirst, hidden)
-            for path in dirs
+            walk(path, maxdepth - 1, dirsfirst, filesfirst, hidden) for path in dirs
         ]
     children += [DirLevel(Path(path)) for path in nondirs]
     children = list(filter(None, children))
@@ -176,11 +175,7 @@ def walk(
 
 def get_desc(dirtree):
     """generate the annotation for a dirtree entry, if available"""
-    return (
-        f"  [green]# {dirtree.description}[/green]"
-        if dirtree.description
-        else ""
-    )
+    return f"  [green]# {dirtree.description}[/green]" if dirtree.description else ""
 
 
 def build_tree(dirtree, tree):
@@ -195,9 +190,7 @@ def build_tree(dirtree, tree):
 
 
 @click.command()
-@click.argument(
-    "directory", default=".", type=click.Path(exists=True, file_okay=False)
-)
+@click.argument("directory", default=".", type=click.Path(exists=True, file_okay=False))
 @click.option("--depth", default=1, help="Depth of listing")
 @click.option("--dirsfirst", is_flag=True, help="List directories first")
 @click.option("--filesfirst", is_flag=True, help="List files first")
